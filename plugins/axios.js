@@ -1,6 +1,5 @@
 import axios from 'axios'
 export default function ({ store }) {
-  console.log(store)
   axios.interceptors.request.use(
     (config) => {
       store.commit('setLoading', true)

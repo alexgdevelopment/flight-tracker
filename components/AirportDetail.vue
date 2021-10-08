@@ -216,11 +216,6 @@
         },
       },
     },
-    beforeCreate() {
-      if (!this.$store.state.airports.currentAirport) {
-        return this.$router.push('/')
-      }
-    },
     mounted() {
       this.scrollIntoView(this.$refs.airportCard)
     },
