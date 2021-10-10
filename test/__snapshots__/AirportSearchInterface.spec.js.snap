@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AirportSearchInterface should match the snapshot 1`] = `
+<div>
+  <div
+    autofocus="autofocus"
+    class="v-text-field px-4"
+    clearable=""
+    counter="10"
+    label="Airport name"
+    rules="(v) => {
+          /* istanbul ignore next */
+          cov_19eqwr82h5().f[2]++;
+          cov_19eqwr82h5().s[6]++;
+          return (
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[0][0]++, v === null) ||
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[0][1]++, v.length > 2) ||
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[0][2]++, 'Min 3 characters')
+          );
+        },(v) => {
+          /* istanbul ignore next */
+          cov_19eqwr82h5().f[3]++;
+          cov_19eqwr82h5().s[7]++;
+          return (
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[1][0]++, v === null) ||
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[1][1]++, v.length <= 10) ||
+            /* istanbul ignore next */
+            (cov_19eqwr82h5().b[1][2]++, 'Max 10 characters')
+          );
+        }"
+  />
+   
+  <v-row-stub
+    class="mt-3"
+    justify="center"
+    tag="div"
+  >
+    <v-col-stub
+      cols="auto"
+      tag="div"
+    >
+      <v-btn-stub
+        activeclass=""
+        tag="button"
+        type="button"
+      >
+        Go
+      </v-btn-stub>
+    </v-col-stub>
+  </v-row-stub>
+   
+  <v-col-stub
+    class="results-container"
+    tag="div"
+  >
+    <div
+      airport="[object Object]"
+      class="airport-card mb-3"
+    />
+  </v-col-stub>
+</div>
+`;

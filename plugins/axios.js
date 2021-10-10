@@ -7,7 +7,7 @@ export default function ({ store }) {
     },
     (e) => {
       store.commit('setLoading', false)
-      console.log(e)
+      console.warn(e)
       return Promise.reject(e)
     }
   )
@@ -18,7 +18,7 @@ export default function ({ store }) {
     },
     (e) => {
       store.commit('setLoading', false)
-      console.log(e)
+      console.warn(e)
       return Promise.reject(e)
     }
   )

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlightSearchInterface should match the snapshot 1`] = `
+<div>
+  <div
+    autofocus="autofocus"
+    class="v-text-field px-4"
+    clearable=""
+    counter="10"
+    label="Flight Number"
+    rules="(v) => {
+          /* istanbul ignore next */
+          cov_evj73t90m().f[2]++;
+          cov_evj73t90m().s[6]++;
+          return (
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[0][0]++, v === null) ||
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[0][1]++, v.length > 1) ||
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[0][2]++, 'Min 2 characters')
+          );
+        },(v) => {
+          /* istanbul ignore next */
+          cov_evj73t90m().f[3]++;
+          cov_evj73t90m().s[7]++;
+          return (
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[1][0]++, v === null) ||
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[1][1]++, v.length <= 10) ||
+            /* istanbul ignore next */
+            (cov_evj73t90m().b[1][2]++, 'Max 10 characters')
+          );
+        }"
+  />
+   
+  <div
+    class="v-menu"
+  >
+    <!---->
+  </div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="v-text-field"
+    prepend-icon="mdi-calendar"
+    readonly="readonly"
+    role="button"
+  />
+   
+  <div
+    class="row mt-3 justify-center"
+    style="display: none;"
+  >
+    <div
+      class="col col-auto"
+    >
+      <button
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
+        type="button"
+      >
+        <span
+          class="v-btn__content"
+        >
+          Go
+        </span>
+      </button>
+    </div>
+  </div>
+   
+  <!---->
+</div>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search type selector should match the snapshot 1`] = `
+<div
+  class="v-input theme--light v-input--selection-controls v-input--radio-group v-input--radio-group--row"
+>
+  <div
+    class="v-input__control"
+  >
+    <div
+      class="v-input__slot"
+      style="height: auto;"
+    >
+      <div
+        aria-labelledby="input-13"
+        class="v-input--radio-group__input"
+        role="radiogroup"
+      >
+        <div
+          class="spacer"
+        />
+         
+        <div
+          class="v-radio"
+          color="orange"
+          value="search_type_airport"
+        />
+         
+        <div
+          class="spacer"
+        />
+         
+        <div
+          class="v-radio"
+          color="blue"
+          value="search_type_flight"
+        />
+         
+        <div
+          class="spacer"
+        />
+      </div>
+    </div>
+    <div
+      class="v-messages theme--light"
+    >
+      <transition-group-stub
+        class="v-messages__wrapper"
+        name="message-transition"
+        tag="div"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -164,10 +164,8 @@
 
 <script>
   import { mapState } from 'vuex'
-  import scrollMixin from 'assets/mixins/scrollMixin'
 
   export default {
-    mixins: [scrollMixin],
     data() {
       return {
         dateFromPicker: false,
@@ -216,13 +214,9 @@
         },
       },
     },
-    mounted() {
-      this.scrollIntoView(this.$refs.airportCard)
-    },
     methods: {
       onSearch() {
-        console.log(this.oneDayLess(this.dateTo))
-        // this.$store.dispatch('flights/getFlightsForAirport')
+        this.$store.dispatch('flights/getFlightsForAirport')
       },
       onClear() {
         this.$store.dispatch('clearToFromDates')

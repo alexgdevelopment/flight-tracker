@@ -15,3 +15,10 @@ export const mockFlight = {
   arrivalLocal: '2020-10-05T22:00',
   status: 'Arrived',
 }
+
+export const mockAirport = {
+  fullName: 'Mock Airport',
+  country: {
+    name: 'Tadjikistan',
+  },
+}
