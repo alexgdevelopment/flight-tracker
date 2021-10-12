@@ -6,10 +6,11 @@
       label="Airport name"
       autofocus
       class="px-4"
+      data-testid="searchField"
       :counter="10"
       :rules="searchFieldRules"
     ></v-text-field>
-    <v-row v-show="showSearchButton" class="mt-3" justify="center">
+    <v-row v-if="showSearchButton" class="mt-3" justify="center">
       <v-col cols="auto">
         <v-btn @click="buttonClick">Go</v-btn>
       </v-col>
@@ -18,7 +19,11 @@
     <v-col v-else-if="noResultsInSearch">
       <p>No results.</p>
     </v-col>
-    <v-col v-else-if="airports" class="results-container">
+    <v-col
+      v-else-if="airports"
+      class="results-container"
+      data-testid="airportsContainer"
+    >
       <AirportCard
         v-for="airport in airports"
         :key="airport.fullName"
@@ -35,7 +40,6 @@
   export default {
     data() {
       return {
-        datePicker: false,
         searchFieldRules: [
           (v) => v === null || v.length > 2 || 'Min 3 characters',
           (v) => v === null || v.length <= 10 || 'Max 10 characters',

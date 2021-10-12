@@ -2,7 +2,6 @@
   <v-row justify="center">
     <v-col cols="9">
       <SearchTypeSelector />
-
       <FlightSearchInterface v-if="searchType === searchTypeVar.FLIGHT" />
       <AirportSearchInterface v-if="searchType === searchTypeVar.AIRPORT" />
     </v-col>

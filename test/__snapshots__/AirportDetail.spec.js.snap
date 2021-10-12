@@ -1,259 +1,384 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Airport Detail should match the snapshot 1`] = `
-<v-col-stub
-  tag="div"
+<div
+  class="col"
 >
-  <v-card-stub
-    class="pa-3"
-    loaderheight="4"
-    tag="div"
+  <div
+    class="pa-3 v-card v-sheet theme--light"
   >
-    <v-fab-transition-stub
+    <transition-stub
       mode="out-in"
-      origin="center center"
+      name="fab-transition"
     >
-      <v-btn-stub
-        absolute="true"
-        activeclass=""
-        color="green"
-        elevation="2"
-        fab="true"
-        left="true"
-        tag="button"
-        top="true"
+      <button
+        class="v-btn v-btn--absolute v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--left v-btn--round v-btn--top theme--light elevation-2 v-size--x-small green"
+        data-testid="backButton"
         type="button"
-        xsmall="true"
       >
-        <v-icon-stub>
-          mdi-arrow-left
-        </v-icon-stub>
-      </v-btn-stub>
-    </v-fab-transition-stub>
+        <span
+          class="v-btn__content"
+        >
+          <i
+            aria-hidden="true"
+            class="v-icon notranslate mdi mdi-arrow-left theme--light"
+          />
+        </span>
+      </button>
+    </transition-stub>
      
     <div
       airport="[object Object]"
       class="airport-card"
     />
      
-    <v-row-stub
-      class="mt-3"
-      justify="center"
-      tag="div"
+    <div
+      class="row mt-3 justify-center"
     >
-      <v-col-stub
-        tag="div"
+      <div
+        class="col"
       >
-        <v-card-stub
-          class="pa-3"
-          elevation="5"
-          loaderheight="4"
-          tag="div"
+        <div
+          class="pa-3 v-card v-sheet theme--light elevation-5"
         >
-          <v-row-stub
-            justify="center"
-            tag="div"
+          <div
+            class="row justify-center"
           >
-            <v-col-stub
-              cols="auto"
-              tag="div"
+            <div
+              class="col col-auto"
             >
               <div>
                 From
               </div>
-            </v-col-stub>
-          </v-row-stub>
+            </div>
+          </div>
            
-          <v-menu-stub
-            closedelay="0"
-            closeonclick="true"
-            contentclass=""
-            maxheight="auto"
-            maxwidth="auto"
-            nudgebottom="0"
-            nudgeleft="0"
-            nudgeright="0"
-            nudgetop="0"
-            nudgewidth="0"
-            offsety="true"
-            opendelay="0"
-            openonclick="true"
-            origin="top left"
-            transition="v-menu-transition"
+          <div
+            class="v-menu"
           >
-             
-            <v-date-picker-stub
-              color="green"
-              eventcolor="warning"
-              firstdayofweek="0"
-              localefirstdayofyear="0"
-              nexticon="$next"
-              nextmontharialabel="$vuetify.datePicker.nextMonthAriaLabel"
-              nextyeararialabel="$vuetify.datePicker.nextYearAriaLabel"
-              previcon="$prev"
-              prevmontharialabel="$vuetify.datePicker.prevMonthAriaLabel"
-              prevyeararialabel="$vuetify.datePicker.prevYearAriaLabel"
-              selecteditemstext="$vuetify.datePicker.itemsSelected"
-              showcurrent="true"
-              type="date"
-              width="290"
-            />
-          </v-menu-stub>
+            <!---->
+          </div>
+          <div
+            class="v-input v-input--is-readonly theme--light v-text-field"
+          >
+            <div
+              class="v-input__prepend-outer"
+            >
+              <div
+                class="v-input__icon v-input__icon--prepend"
+              >
+                <i
+                  aria-hidden="true"
+                  class="v-icon notranslate mdi mdi-calendar theme--light"
+                />
+              </div>
+            </div>
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <input
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    data-testid="dateFromTextField"
+                    id="input-46"
+                    readonly="readonly"
+                    role="button"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
            
-          <v-menu-stub
-            closedelay="0"
-            closeonclick="true"
-            contentclass=""
-            maxheight="auto"
-            maxwidth="auto"
-            nudgebottom="0"
-            nudgeleft="0"
-            nudgeright="0"
-            nudgetop="0"
-            nudgewidth="0"
-            offsety="true"
-            opendelay="0"
-            openonclick="true"
-            origin="top left"
-            transition="v-menu-transition"
+          <div
+            class="v-menu"
           >
-             
-            <v-time-picker-stub
-              color="green"
-              format="24hr"
-              width="290"
-            />
-          </v-menu-stub>
-        </v-card-stub>
-      </v-col-stub>
+            <!---->
+          </div>
+          <div
+            class="v-input v-input--is-readonly theme--light v-text-field"
+          >
+            <div
+              class="v-input__prepend-outer"
+            >
+              <div
+                class="v-input__icon v-input__icon--prepend"
+              >
+                <i
+                  aria-hidden="true"
+                  class="v-icon notranslate mdi mdi-clock theme--light"
+                />
+              </div>
+            </div>
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <input
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    data-testid="timeFromTextField"
+                    id="input-51"
+                    readonly="readonly"
+                    role="button"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
        
-      <v-col-stub
-        tag="div"
+      <div
+        class="col"
       >
-        <v-card-stub
-          class="pa-3"
-          elevation="5"
-          loaderheight="4"
-          tag="div"
+        <div
+          class="pa-3 v-card v-sheet theme--light elevation-5"
         >
-          <v-row-stub
-            justify="center"
-            tag="div"
+          <div
+            class="row justify-center"
           >
-            <v-col-stub
-              cols="auto"
-              tag="div"
+            <div
+              class="col col-auto"
             >
               <div>
                 To
               </div>
-            </v-col-stub>
-          </v-row-stub>
+            </div>
+          </div>
            
-          <v-menu-stub
-            closedelay="0"
-            closeonclick="true"
-            contentclass=""
-            maxheight="auto"
-            maxwidth="auto"
-            nudgebottom="0"
-            nudgeleft="0"
-            nudgeright="0"
-            nudgetop="0"
-            nudgewidth="0"
-            offsety="true"
-            opendelay="0"
-            openonclick="true"
-            origin="top left"
-            transition="v-menu-transition"
+          <div
+            class="v-menu"
           >
-             
-            <v-date-picker-stub
-              color="green"
-              eventcolor="warning"
-              firstdayofweek="0"
-              localefirstdayofyear="0"
-              nexticon="$next"
-              nextmontharialabel="$vuetify.datePicker.nextMonthAriaLabel"
-              nextyeararialabel="$vuetify.datePicker.nextYearAriaLabel"
-              previcon="$prev"
-              prevmontharialabel="$vuetify.datePicker.prevMonthAriaLabel"
-              prevyeararialabel="$vuetify.datePicker.prevYearAriaLabel"
-              selecteditemstext="$vuetify.datePicker.itemsSelected"
-              showcurrent="true"
-              type="date"
-              width="290"
-            />
-          </v-menu-stub>
+            <!---->
+          </div>
+          <div
+            class="v-input v-input--is-readonly theme--light v-text-field"
+          >
+            <div
+              class="v-input__prepend-outer"
+            >
+              <div
+                class="v-input__icon v-input__icon--prepend"
+              >
+                <i
+                  aria-hidden="true"
+                  class="v-icon notranslate mdi mdi-calendar theme--light"
+                />
+              </div>
+            </div>
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <input
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    data-testid="dateToTextField"
+                    id="input-57"
+                    readonly="readonly"
+                    role="button"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
            
-          <v-menu-stub
-            closedelay="0"
-            closeonclick="true"
-            contentclass=""
-            maxheight="auto"
-            maxwidth="auto"
-            nudgebottom="0"
-            nudgeleft="0"
-            nudgeright="0"
-            nudgetop="0"
-            nudgewidth="0"
-            offsety="true"
-            opendelay="0"
-            openonclick="true"
-            origin="top left"
-            transition="v-menu-transition"
+          <div
+            class="v-menu"
           >
-             
-            <v-time-picker-stub
-              color="green"
-              format="24hr"
-              width="290"
-            />
-          </v-menu-stub>
-        </v-card-stub>
-      </v-col-stub>
-    </v-row-stub>
+            <!---->
+          </div>
+          <div
+            class="v-input v-input--is-readonly theme--light v-text-field"
+          >
+            <div
+              class="v-input__prepend-outer"
+            >
+              <div
+                class="v-input__icon v-input__icon--prepend"
+              >
+                <i
+                  aria-hidden="true"
+                  class="v-icon notranslate mdi mdi-clock theme--light"
+                />
+              </div>
+            </div>
+            <div
+              class="v-input__control"
+            >
+              <div
+                class="v-input__slot"
+              >
+                <div
+                  class="v-text-field__slot"
+                >
+                  <input
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    data-testid="timeToTextField"
+                    id="input-62"
+                    readonly="readonly"
+                    role="button"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                class="v-text-field__details"
+              >
+                <div
+                  class="v-messages theme--light"
+                >
+                  <transition-group-stub
+                    class="v-messages__wrapper"
+                    name="message-transition"
+                    tag="div"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
      
-    <v-row-stub
-      class="mt-6"
-      justify="center"
-      tag="div"
+    <div
+      class="row mt-6 justify-center"
     >
-      <v-btn-stub
-        activeclass=""
-        tag="button"
+      <button
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
+        data-testid="clearTermsButton"
         type="button"
       >
-         clear terms 
-      </v-btn-stub>
+        <span
+          class="v-btn__content"
+        >
+          
+        clear terms
+      
+        </span>
+      </button>
        
-      <v-btn-stub
-        activeclass=""
-        tag="button"
+      <button
+        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
+        data-testid="searchButton"
         type="button"
       >
-         search 
-      </v-btn-stub>
-    </v-row-stub>
+        <span
+          class="v-btn__content"
+        >
+          
+        search
+      
+        </span>
+      </button>
+    </div>
      
-    <v-row-stub
-      justify="center"
-      tag="div"
+    <div
+      class="row justify-center"
     >
-      <v-col-stub
-        tag="div"
+      <div
+        class="col"
+        data-testid="arrivalsColumn"
       >
-        <!---->
+        <div
+          class="row justify-center"
+        >
+          <div
+            class="col col-auto"
+          >
+            <div>
+              Arrivals
+            </div>
+          </div>
+        </div>
          
-      </v-col-stub>
+        <div
+          class="flight-card"
+          flight="[object Object]"
+        />
+      </div>
        
-      <v-col-stub
-        tag="div"
+      <div
+        class="col"
+        data-testid="departuresColumn"
       >
-        <!---->
+        <div
+          class="row justify-center"
+        >
+          <div
+            class="col col-auto"
+          >
+            <div>
+              Departures
+            </div>
+          </div>
+        </div>
          
-      </v-col-stub>
-    </v-row-stub>
-  </v-card-stub>
-</v-col-stub>
+        <div
+          class="flight-card"
+          flight="[object Object]"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 `;

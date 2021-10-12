@@ -10,6 +10,7 @@
           left
           fab
           x-small
+          data-testid="backButton"
           @click="onBack"
         >
           <v-icon>mdi-arrow-left</v-icon>
@@ -34,6 +35,7 @@
                   v-model="dateFrom"
                   readonly
                   prepend-icon="mdi-calendar"
+                  data-testid="dateFromTextField"
                   v-bind="attrs"
                   v-on="on"
                 >
@@ -44,6 +46,7 @@
                 :color="mainColor"
                 :max="dateTo"
                 :min="oneDayLess(dateTo)"
+                data-testid="dateFromPicker"
                 @click:date="dateFromPicker = false"
               />
             </v-menu>
@@ -57,6 +60,7 @@
                   v-model="timeFrom"
                   readonly
                   prepend-icon="mdi-clock"
+                  data-testid="timeFromTextField"
                   v-bind="attrs"
                   v-on="on"
                 >
@@ -67,6 +71,7 @@
                 :color="mainColor"
                 format="24hr"
                 :min="twelveHoursLess(timeTo)"
+                data-testid="timeFromPicker"
                 @click:minute="timeFromPicker = false"
               />
             </v-menu>
@@ -89,6 +94,7 @@
                   v-model="dateTo"
                   readonly
                   prepend-icon="mdi-calendar"
+                  data-testid="dateToTextField"
                   v-bind="attrs"
                   v-on="on"
                 >
@@ -99,6 +105,7 @@
                 :color="mainColor"
                 :min="dateFrom"
                 :max="oneDayMore(dateFrom)"
+                data-testid="dateToPicker"
                 @click:date="dateToPicker = false"
               />
             </v-menu>
@@ -112,6 +119,7 @@
                   v-model="timeTo"
                   readonly
                   prepend-icon="mdi-clock"
+                  data-testid="timeToTextField"
                   v-bind="attrs"
                   v-on="on"
                 >
@@ -122,6 +130,7 @@
                 :color="mainColor"
                 :max="twelveHoursMore(timeFrom)"
                 format="24hr"
+                data-testid="timeToPicker"
                 @click:minute="timeToPicker = false"
               />
             </v-menu>
@@ -129,12 +138,19 @@
         </v-col>
       </v-row>
       <v-row justify="center" class="mt-6">
-        <v-btn @click.native="onClear"> clear terms </v-btn>
-        <v-btn @click.native="onSearch"> search </v-btn>
+        <v-btn data-testid="clearTermsButton" @click.native="onClear">
+          clear terms
+        </v-btn>
+        <v-btn data-testid="searchButton" @click.native="onSearch">
+          search
+        </v-btn>
       </v-row>
       <v-row justify="center">
-        <v-col>
-          <v-row v-if="arrivals && arrivals.length !== 0" justify="center">
+        <v-col
+          v-if="arrivals && arrivals.length !== 0"
+          data-testid="arrivalsColumn"
+        >
+          <v-row justify="center">
             <v-col cols="auto">
               <div>Arrivals</div>
             </v-col>
@@ -146,7 +162,9 @@
           />
         </v-col>
         <v-col
-          ><v-row v-if="departures && departures.length !== 0" justify="center">
+          v-if="departures && departures.length !== 0"
+          data-testid="departuresColumn"
+          ><v-row justify="center">
             <v-col cols="auto">
               <div>Departures</div>
             </v-col>

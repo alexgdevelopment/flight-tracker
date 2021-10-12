@@ -5,9 +5,16 @@ import ErrorContainer from '@/components/ErrorContainer.vue'
 describe('ErrorContainer', () => {
   let wrapper = null
   let store
+  let state
+  const testString = 'test'
 
   beforeEach(() => {
-    store = new Store({})
+    state = {
+      errorMessage: testString,
+    }
+    store = new Store({
+      state,
+    })
 
     wrapper = mount(ErrorContainer, {
       store,
@@ -19,5 +26,9 @@ describe('ErrorContainer', () => {
 
   it('should match the snapshot', () => {
     expect(wrapper.element).toMatchSnapshot()
+  })
+
+  test('should display the passed error message', () => {
+    expect(wrapper.text()).toBe(testString)
   })
 })

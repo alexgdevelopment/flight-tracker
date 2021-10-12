@@ -1,74 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FlightSearchInterface should match the snapshot 1`] = `
-<div>
-  <div
-    autofocus="autofocus"
-    class="v-text-field px-4"
-    clearable=""
-    counter="10"
-    label="Flight Number"
-    rules="(v) => {
-          /* istanbul ignore next */
-          cov_evj73t90m().f[2]++;
-          cov_evj73t90m().s[6]++;
-          return (
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[0][0]++, v === null) ||
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[0][1]++, v.length > 1) ||
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[0][2]++, 'Min 2 characters')
-          );
-        },(v) => {
-          /* istanbul ignore next */
-          cov_evj73t90m().f[3]++;
-          cov_evj73t90m().s[7]++;
-          return (
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[1][0]++, v === null) ||
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[1][1]++, v.length <= 10) ||
-            /* istanbul ignore next */
-            (cov_evj73t90m().b[1][2]++, 'Max 10 characters')
-          );
-        }"
-  />
-   
-  <div
-    class="v-menu"
-  >
-    <!---->
-  </div>
-  <div
-    aria-expanded="false"
-    aria-haspopup="true"
-    class="v-text-field"
-    prepend-icon="mdi-calendar"
-    readonly="readonly"
-    role="button"
-  />
-   
-  <div
-    class="row mt-3 justify-center"
-    style="display: none;"
-  >
-    <div
-      class="col col-auto"
-    >
-      <button
-        class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default"
-        type="button"
-      >
-        <span
-          class="v-btn__content"
-        >
-          Go
-        </span>
-      </button>
+exports[`FlightSearchInterface when there are not selected airports and no searches performed should match the snapshot 1`] = `
+"<div>
+  <div class=\\"v-input px-4 v-input--is-focused theme--light v-text-field primary--text\\">
+    <div class=\\"v-input__control\\">
+      <div class=\\"v-input__slot\\">
+        <div class=\\"v-text-field__slot\\"><label for=\\"input-67\\" class=\\"v-label v-label--active theme--light primary--text\\" style=\\"left: 0px; position: absolute;\\">Flight number</label><input autofocus=\\"autofocus\\" id=\\"input-67\\" type=\\"text\\"></div>
+        <div class=\\"v-input__append-inner\\">
+          <div></div>
+        </div>
+      </div>
+      <div class=\\"v-text-field__details\\">
+        <div class=\\"v-messages theme--light primary--text\\">
+          <transition-group-stub tag=\\"div\\" name=\\"message-transition\\" class=\\"v-messages__wrapper\\"></transition-group-stub>
+        </div>
+        <div class=\\"v-counter theme--light\\">0 / 10</div>
+      </div>
     </div>
   </div>
-   
+  <div class=\\"v-menu\\">
+    <!---->
+  </div>
+  <div class=\\"v-input v-input--is-readonly theme--light v-text-field\\" style=\\"display: none;\\">
+    <div class=\\"v-input__prepend-outer\\">
+      <div class=\\"v-input__icon v-input__icon--prepend\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-calendar theme--light\\"></i></div>
+    </div>
+    <div class=\\"v-input__control\\">
+      <div class=\\"v-input__slot\\">
+        <div class=\\"v-text-field__slot\\"><input role=\\"button\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\" id=\\"input-71\\" readonly=\\"readonly\\" type=\\"text\\"></div>
+      </div>
+      <div class=\\"v-text-field__details\\">
+        <div class=\\"v-messages theme--light\\">
+          <transition-group-stub tag=\\"div\\" name=\\"message-transition\\" class=\\"v-messages__wrapper\\"></transition-group-stub>
+        </div>
+      </div>
+    </div>
+  </div>
   <!---->
-</div>
+  <!---->
+</div>"
 `;

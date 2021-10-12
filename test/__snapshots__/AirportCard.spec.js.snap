@@ -13,6 +13,7 @@ exports[`Airport Card should match the snapshot 1`] = `
     >
       <div
         class="v-list-item__title"
+        data-testid="airportName"
       >
         Mock Airport
       </div>
@@ -33,6 +34,7 @@ exports[`Airport Card should match the snapshot 1`] = `
     >
       <div
         class="v-list-item__title"
+        data-testid="airportCountryName"
       >
         Tadjikistan
       </div>

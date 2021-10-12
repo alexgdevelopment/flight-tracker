@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The "index" page when there is no search type selected should match the snapshot 1`] = `
+"<div class=\\"row justify-center\\">
+  <div class=\\"col col-9\\">
+    <div data-testid=\\"search-type-selector\\"></div>
+    <!---->
+    <!---->
+  </div>
+</div>"
+`;

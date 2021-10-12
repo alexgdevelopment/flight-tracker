@@ -3,7 +3,7 @@
     <v-text-field
       v-model="searchValue"
       clearable
-      label="Flight Number"
+      label="Flight number"
       autofocus
       class="px-4"
       :counter="10"
@@ -36,7 +36,7 @@
       >
       </v-date-picker>
     </v-menu>
-    <v-row v-show="showSearchButton" class="mt-3" justify="center">
+    <v-row v-if="showSearchButton" class="mt-3" justify="center">
       <v-col cols="auto">
         <v-btn @click="buttonClick">Go</v-btn>
       </v-col>
@@ -44,7 +44,11 @@
     <v-col v-if="noResultsInSearch">
       <p>No results.</p>
     </v-col>
-    <v-col v-else-if="flights" class="results-container">
+    <v-col
+      v-else-if="flights"
+      class="results-container"
+      data-testid="flightsContainer"
+    >
       <FlightCard
         v-for="flight in flights"
         :key="flight.number"

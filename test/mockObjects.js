@@ -4,15 +4,15 @@ export const mockFlight = {
     airport: {
       name: 'Testing Departure',
     },
+    scheduledTimeLocal: '2020-10-05T20:00',
   },
   arrival: {
     airport: {
       name: 'Testing Arrival',
     },
+    scheduledTimeLocal: '2020-10-05T22:00',
     terminal: '1',
   },
-  departureLocal: '2020-10-05T20:00',
-  arrivalLocal: '2020-10-05T22:00',
   status: 'Arrived',
 }
 
@@ -22,3 +22,5 @@ export const mockAirport = {
     name: 'Tadjikistan',
   },
 }
+
+export const mockDate = '2020-12-12'
